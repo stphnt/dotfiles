@@ -1,0 +1,5 @@
+export EDITOR=/usr/bin/nvim
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/opt/clang-format-static:$PATH"
+
