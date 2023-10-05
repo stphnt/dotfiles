@@ -1,0 +1,19 @@
+[user]
+	email = {{ .git.user.email | quote }}
+	name = Stephen Hunt
+	signingkey = {{ .git.user.signingkey | quote }}
+[merge]
+	tool = meld
+[diff "daff-csv"]
+	command = daff diff --git
+[merge "daff-csv"]
+	name = daff tabular csv merge
+	driver = daff merge --output %A %O %A %B
+[remote "origin"]
+	prune = true
+[pull]
+	ff = only
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
