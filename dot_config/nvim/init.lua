@@ -126,6 +126,27 @@ require('lazy').setup({
       },
     },
   },
+  
+  -- Show each buffer along the top of the screen. 
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = {
+      'nvim-tree/nvim-web-devicons'
+    },
+  },
+
+  {
+    'nvim-tree/nvim-tree.lua',
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  },
 
   {
     -- Add indentation guides even on blank lines
