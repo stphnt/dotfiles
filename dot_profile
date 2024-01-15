@@ -1,5 +1,4 @@
 . "$HOME/.cargo/env"
 
-# Make GPG keys work
 export GPG_TTY=$(tty)
 
