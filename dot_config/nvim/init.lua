@@ -212,6 +212,9 @@ require('lazy').setup({
 -- Set highlight on search
 vim.o.hlsearch = true
 
+-- Show 5 lines of context when scrolling (especially nice when moving between search results)
+vim.o.scrolloff = 5
+
 -- Make line numbers default and relative
 vim.wo.number = true
 vim.wo.relativenumber = true
