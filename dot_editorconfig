@@ -4,7 +4,12 @@ root = true
 
 [*]
 end_of_line = lf
+trim_trailing_whitespace = true
 insert_final_newline = true
+
+[*.sql]
+indent_style = tab
+indent_size = 2
 
 [*.{rs,c,cpp,cxx,h,hpp,hxx}]
 indent_style = tab
