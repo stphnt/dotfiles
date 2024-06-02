@@ -127,8 +127,8 @@ require('lazy').setup({
       },
     },
   },
-  
-  -- Show each buffer along the top of the screen. 
+
+  -- Show each buffer along the top of the screen.
   {
     'akinsho/bufferline.nvim',
     version = "*",
