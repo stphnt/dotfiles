@@ -259,6 +259,11 @@ vim.opt.listchars = {
 	extends = "»",
 }
 
+-- Code folding.
+-- Fold based on indent, but have all folds open when opening a buffer.
+vim.opt.foldmethod = "indent"
+vim.opt.foldlevelstart = 99
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
